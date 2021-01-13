@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>ROBOTS GAME</title>
+</head>
+
+<body>
+    <div id="mainDiv" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Robots Game</h1>
+            <div id="buttons">
+                <button onclick="mainFunctions()" type="button" class="btn btn-primary"> Add New Robots! </button>
+                <button id="hideButton" type="button" class="btn btn-dark" onclick="Hide()" disabled>Hide Robots!</button>
+                <button id="showButton" type="button" class="btn btn-success" onclick="show()" disabled> show Robots!
+                </button>
+                <button id="restartButton" type="button" class="btn btn-secondary" onclick="Restart()" disabled> Restart
+                    Game! </button>
+                <button type="button" class="btn btn-warning"  onclick="chooseLevel()" style="background-color: rgb(224, 168, 0,0.8);">Choose Level</button>
+            </div>
+            <div id="pt">
+                <p id="p1"><br>
+                    <label id="points"> </label>
+                    <label id="point"> points </label>
+                    <label id="time"></label>
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="div1" class="container-fluid"></div>
+    <div id="diffH1">
+        <h1>Choose Level  <span class="iconify" data-icon="mdi-robot" data-inline="false" style="width:100px ;height: 70px;margin: auto;"></span></h1>
+        <div id="diff">
+            <button id="easy" type="button" class="btn btn-success" onclick="afterChooseLevel(event)" time="60">Easy<br>
+               <label class="timeForDisplay">60 Seconds</label>
+            </button>
+            <button id="meduim" type="button" class="btn btn-primary" onclick="afterChooseLevel(event)" time="40">Meduim<br>
+                <label class="timeForDisplay">40 Seconds</label></button>
+            <button id="hard" type="button" class="btn btn-danger" onclick="afterChooseLevel(event)" time="20">Hard<br>
+                <label class="timeForDisplay">20 Seconds</label></button>
+        </div>
+    </div>
+
+    <footer id="footer"> <small>&copy;  <strong>2020, All Rights Reserved</strong> </small> </footer> 
+
+
+    <script src="./robots.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+
+</html>
